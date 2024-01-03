@@ -40,11 +40,11 @@ export default function StopWatch() {
 
   return (
     <>
-      <div className="text-white flex flex-col items-center text-7xl mt-80">
+      <div className="text-white flex flex-col items-center text-3xl md:text-6xl lg:text-7xl mt-80">
         <span className="mx-auto font-mich font-bold">
           Time:{secondsPassed.toFixed(3)}
         </span>
-        <div className="flex gap-4 bg-white p-5 text-5xl mt-5 font-mich">
+        <div className="flex items-center justify-center gap-4 bg-white p-2 text-lg md:p-5 md:text-4xl lg:p-5 lg:text-5xl mt-5 font-mich">
           <button
             className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 border border-blue-700 rounded"
             onClick={handleStart}
