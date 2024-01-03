@@ -11,6 +11,7 @@ export default function StopWatch() {
     };
   }, []);
 
+  //handle start
   const handleStart = () => {
     setStartTime(Date.now());
     setNow(Date.now());
@@ -21,8 +22,15 @@ export default function StopWatch() {
     }, 10);
   };
 
+  //handle stop
   const handleStop = () => {
     clearInterval(intervalRef.current);
+  };
+
+  //handle reset
+  const handleRest = () => {
+    setStartTime(null);
+    setNow(null);
   };
 
   let secondsPassed = 0;
@@ -48,6 +56,13 @@ export default function StopWatch() {
             onClick={handleStop}
           >
             Stop
+          </button>
+
+          <button
+            className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 border border-blue-700 rounded"
+            onClick={handleRest}
+          >
+            Rest
           </button>
         </div>
       </div>
