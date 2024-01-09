@@ -62,7 +62,7 @@ export default function StopWatch() {
             className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 border border-blue-700 rounded"
             onClick={handleRest}
           >
-            Rest
+            Reset
           </button>
         </div>
       </div>
